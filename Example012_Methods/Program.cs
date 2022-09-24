@@ -1,4 +1,4 @@
-﻿/*
+﻿
 // Вид 1
 
 void Method1()
@@ -55,7 +55,7 @@ string Method4(int count, string text)
 }
 string res = Method4(10, "z");
 //Console.WriteLine(res);
-/*
+
 for (int i = 2; i < 10; i++)
 {
     for (int j = 2; j < 10; j++)
@@ -64,12 +64,12 @@ for (int i = 2; i < 10; i++)
     }
     Console.WriteLine();
 }
-*/
+
 //========= Работа с текстом
 // Дан текст. В тексте нежно все пробелы заменить черточками,
 // маленькие буквы "к" заменить большими "К",
 // а большие "С" заменить маленькими "с".
-/*
+
 string text = "- Я думаю, - сказал князь, улыбаясь, - что, "
             + " ежели бы вас послали вместо нашего милого Винценгероде, "
             + " вы бы  взяли приступом согласие пруссского короля. "
@@ -98,8 +98,9 @@ Console.WriteLine(newText);
 Console.WriteLine();
 newText = Replace(newText, 'к', 'К');
 Console.WriteLine(newText);
-*/
 
+
+// Выстроить последовательность с min -> max
 
 int[] arr ={1, 5, 4, 3, 2, 6, 7, 1, 1};
 
@@ -122,9 +123,7 @@ void SelectionSort(int[] array)
         for(int j = i + 1; j < array.Length; j++)
         {
             if(array[j] < array[minPosition]) minPosition = j;
-            {
-                minPosition = j;
-            }
+            
         }
         int temporary = array[i];
         array[i] = array[minPosition];
